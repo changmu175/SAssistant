@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/YAssitant.iml" filepath="$PROJECT_DIR$/YAssitant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/presenter/presenter.iml" filepath="$PROJECT_DIR$/presenter/presenter.iml" />
+    </modules>
+  </component>
+</project>

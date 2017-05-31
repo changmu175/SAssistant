@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/alarm_ll">
+
+    <LinearLayout
+        android:id="@+id/alarm"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/count_down_tv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="关闭"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+</LinearLayout>
