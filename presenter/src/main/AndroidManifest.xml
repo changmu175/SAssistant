@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.dm.ycm.yassitant">
 
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
@@ -44,10 +45,23 @@
             android:name=".AboutGuardActivity"
             android:label="@string/about_guard_title"
             android:theme="@style/AppTheme" />
-
-        <service android:name=".service.LTService" />
+        <service
+            android:name=".service.ProximityListenerService"
+            tools:ignore="ExportedService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.xdja.MqttService" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
         <service android:name=".service.DialogService" />
-
+        <service
+            android:name=".service.aidl.GuardService"
+            android:process=":guard"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.dm.service.aidl" />
+            </intent-filter>
+        </service>
         <receiver
             android:name=".receiver.LockReceiver"
             android:description="@string/app_name"

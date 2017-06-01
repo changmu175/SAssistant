@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import com.dm.ycm.yassitant.dialog.AlarmActivity;
 import com.dm.ycm.yassitant.receiver.LockReceiver;
-import com.dm.ycm.yassitant.service.LTService;
+import com.dm.ycm.yassitant.service.ProximityListenerService;
 import com.dm.ycm.yassitant.utils.ActivityStack;
 import com.dm.ycm.yassitant.utils.LSUtil;
 import com.dm.ycm.yassitant.utils.PermissionUtils;
@@ -168,6 +168,8 @@ public class GuardActivity extends AppCompatActivity implements CompoundButton.O
                 vibrate_ll.setVisibility(View.GONE);
                 light_ll.setVisibility(View.GONE);
                 about_guard_ll.setVisibility(View.GONE);
+                Intent intent = new Intent();
+                intent.putExtra("isNeedRestart", false);
                 stopService();
 //                setLockState(false, lockIsOpen);
 //                setVibrateState(false, vibrateIsOpen);
@@ -217,7 +219,7 @@ public class GuardActivity extends AppCompatActivity implements CompoundButton.O
     private void startService() {
         servicePreferenceHelper.saveIntegerData("isWorking", 1);
         Intent intent = new Intent();
-        intent.setClass(getBaseContext(), LTService.class);
+        intent.setClass(getBaseContext(), ProximityListenerService.class);
         startService(intent);
     }
 
@@ -228,7 +230,8 @@ public class GuardActivity extends AppCompatActivity implements CompoundButton.O
             ActivityStack.getInstance().popActivityByClass(AlarmActivity.class, true);
         }
         Intent intent = new Intent();
-        intent.setClass(getBaseContext(), LTService.class);
+        intent.putExtra("isNeedRestart", false);
+        intent.setClass(getBaseContext(), ProximityListenerService.class);
         stopService(intent);
     }
 

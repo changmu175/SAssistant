@@ -7,13 +7,12 @@ import android.content.Intent;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.dm.ycm.yassitant.dialog.AlarmActivity;
 import com.dm.ycm.yassitant.receiver.LockReceiver;
-import com.dm.ycm.yassitant.service.LTService;
+import com.dm.ycm.yassitant.service.ProximityListenerService;
 import com.dm.ycm.yassitant.utils.ActivityStack;
 import com.dm.ycm.yassitant.utils.SharePreferenceHelper;
 
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void startService() {
         Intent intent = new Intent();
-        intent.setClass(getBaseContext(), LTService.class);
+        intent.setClass(getBaseContext(), ProximityListenerService.class);
         startService(intent);
     }
 
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ActivityStack.getInstance().popActivityByClass(AlarmActivity.class, true);
         }
         Intent intent = new Intent();
-        intent.setClass(getBaseContext(), LTService.class);
+        intent.setClass(getBaseContext(), ProximityListenerService.class);
         stopService(intent);
     }
 

@@ -112,10 +112,10 @@ public class ProximitySensorEventListener implements SensorEventListener /*LTCal
         } else {
             secondValue = value;
         }
-        Log.d("LTService", secondValue + "");
+        Log.d("ProximityListenerService", secondValue + "");
         if (tempValue == 2) {
-            Log.d("LTService---firstValue", firstValue + "");
-            Log.d("LTService---secondValue", secondValue + "");
+            Log.d("ProximityListenerService---firstValue", firstValue + "");
+            Log.d("ProximityListenerService---secondValue", secondValue + "");
             firstValue = 100;
             secondValue = 0;
             tempValue = 0;
