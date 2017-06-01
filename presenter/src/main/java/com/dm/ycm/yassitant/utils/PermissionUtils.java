@@ -98,8 +98,8 @@ public class PermissionUtils {
             }
         } else {
             Log.d(TAG, "ActivityCompat.checkSelfPermission ==== PackageManager.PERMISSION_GRANTED");
-            Toast.makeText(activity, "opened:" + requestPermissions[requestCode], Toast.LENGTH_SHORT).show();
-            permissionGrant.onPermissionGranted(requestCode);
+//            Toast.makeText(activity, "opened:" + requestPermissions[requestCode], Toast.LENGTH_SHORT).show();
+//            permissionGrant.onPermissionGranted(requestCode);
         }
     }
 
@@ -128,7 +128,7 @@ public class PermissionUtils {
             }
         }
         if (notGranted.size() == 0) {
-            Toast.makeText(activity, "all permission success" + notGranted, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(activity, "all permission success" + notGranted, Toast.LENGTH_SHORT).show();
             permissionGrant.onPermissionGranted(CODE_MULTI_PERMISSION);
         } else {
             openSettingActivity(activity, "those permission need granted!");
