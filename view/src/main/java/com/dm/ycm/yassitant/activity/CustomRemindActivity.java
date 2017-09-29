@@ -6,5 +6,5 @@ package com.dm.ycm.yassitant.activity;
  * Modified by:
  */
 
-public class CustomRemindActivity extends {
+public class CustomRemindActivity {
 }

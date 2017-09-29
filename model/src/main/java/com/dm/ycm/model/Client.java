@@ -2,8 +2,6 @@ package com.dm.ycm.model;
 
 import android.content.Context;
 
-import com.dm.ycm.model.dao.MentionDb;
-
 /**
  * Created by ycm on 2017/6/27.
  * Description:
@@ -30,6 +28,6 @@ public class Client {
     }
 
     public void initMention(Context context){
-        MentionDb.getInstance().initDatabase(context);
+//        MentionDb.getInstance().initDatabase(context);
     }
 }
