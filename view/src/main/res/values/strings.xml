@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">超级助手</string>
+    <string name="guard_title">防盗设置</string>
+    <string name="about_guard_title">关于防盗</string>
+    <string name="about_app_title">关于APP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_guard">
+        &#032;&#032;&#032;&#032;当开启防盗模式之后，手机会使用距离感应器感应手机从口袋或者包中拿出来的状态，
+    如果手机被掏出，在五秒之内点击屏幕三次，则会发出警报；发出警报之后点击三次屏幕可停止警报，或者解锁之后双击HOME键可以停止警报。
+        \n&#032;&#032;&#032;&#032;1、警报内容默认屏幕闪烁和音乐，你也可以设置震动，闪光灯等。
+        \n&#032;&#032;&#032;&#032;2、警报页面弹起后为了保证警报有效，本应用强制设置音量为最大，并屏蔽了音量键
+        \n&#032;&#032;&#032;&#032;3、为防止长安电源键关机，本应用屏蔽了电源键长按功能，但是音量键和电源键一起长按仍可关机
+        \n&#032;&#032;&#032;&#032;4、点击屏幕三次可关闭警报，或者解锁之后，双击HOME键可关闭警报。
+        \n&#032;&#032;&#032;&#032;5、本品只能防患，但针对某些场景仍不能避免，本品对手机安全不负任何责任，并对功能引起的任何状况不负任何责任，请自己设置防盗使用场景</string>
+    <string name="about_app">
+        &#032;&#032;&#032;&#032;本产品由于人力物力限制，设计之初可能会有诸多问题，目前只适配了三星手机，如有问题请联系作者反馈。\n\n\n&#032;&#032;作者邮箱：changmu175@sina.com</string>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有相机权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    <string name="one_key_lock_screen">一键锁屏</string>
+    <string name="no_flash_light">"当前设备没有闪光灯"</string>
+    <string name="guard_service_is_running">防盗服务正在运行</string>
+    <string name="click_to_close_service">点击关闭防盗服务</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="custom_remind">自定义提醒</string>
+    <string name="pay_remind">充值提醒</string>
+    <string name="flight_remind">航班提醒</string>
+    <string name="train_remind">火车提醒</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="memorandum">备忘录</string>
+    <string name="remind_time">提醒时间</string>
+    <string name="set_time">设置时间</string>
+    <string name="remind_location">提醒位置</string>
+    <string name="set_location">设置位置</string>
+</resources>
